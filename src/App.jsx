@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import { HashRouter, Routes, Route, Link } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
@@ -6,7 +6,7 @@ import KvizKalaNera01 from './pages/KvizKalaNera01';
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div>
         {/* Navigacioni meni koji je vidljiv na svakoj stranici */}
         <nav style={{ padding: '10px', backgroundColor: '#f0f0f0', display: 'flex', gap: '15px' }}>
@@ -26,7 +26,7 @@ function App() {
           </Routes>
         </div>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
